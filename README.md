@@ -5,4 +5,4 @@ To use make sure to include
 ```
 export utorid=<your utorid>
 ```
-In your rc file
+In your rc file and that you're using public key auth
