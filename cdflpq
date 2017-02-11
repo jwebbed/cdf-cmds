@@ -1,0 +1,2 @@
+#! /bin/bash
+ssh $utorid@teach.cs.toronto.edu lpq
