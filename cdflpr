@@ -1,5 +1,5 @@
 #! /bin/bash
 tempfile=.tempforprint.pdf
 
-scp $1 $utorid@teach.cs.toronto.edu:$tempfile
-ssh $utorid@teach.cs.toronto.edu "lpr $tempfile ; rm $tempfile"
+scp ${@:$#} $utorid@teach.cs.toronto.edu:$tempfile
+ssh $utorid@teach.cs.toronto.edu" "lpr ${@:0:$#} $tempfile ; rm $tempfile
