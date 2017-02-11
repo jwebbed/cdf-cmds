@@ -2,4 +2,4 @@
 tempfile=.tempforprint.pdf
 
 scp ${@:$#} $utorid@teach.cs.toronto.edu:$tempfile
-ssh $utorid@teach.cs.toronto.edu" "lpr ${@:0:$#} $tempfile ; rm $tempfile
+ssh $utorid@teach.cs.toronto.edu "lpr ${@:0:$#-1} $tempfile ; rm $tempfile"
